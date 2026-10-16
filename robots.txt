@@ -1,0 +1,5 @@
+# Lamper Soluciones de Acabado · web v3
+User-agent: *
+Allow: /
+
+Sitemap: https://ernespehe.github.io/lamper-acabados/sitemap.xml
