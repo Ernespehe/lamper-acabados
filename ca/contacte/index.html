@@ -196,13 +196,13 @@
            Aquí, sin servidor, el envío prepara un correo a info@lamper.es (con JS) o lo manda
            con el programa de correo del navegador (sin JS).
            Los value de «tipo» se dejan en castellano: van al correo que recibe Lamper. -->
-      <form class="formulario" id="form-contacto" action="mailto:info@lamper.es" method="post" enctype="text/plain">
+      <form class="formulario" id="form-contacto" action="../../ca/contacte/" method="get">
         <fieldset class="entera tipo-trabajo">
-          <legend class="rotulo-campo">Quin tipus de feina és? <span class="obligatorio">obligat<label class="opcion"><input type="radio" name="tipo" value="Industria" data-ayuda="ayuda-industria" required><span><b>Indústria</b>Nau, fàbrica, taller, magatzem o oficines</span></label>
+          <legend class="rotulo-campo">Quin tipus de feina és? <span class="obligatorio">*</span></legend>
+          <label class="opcion"><input type="radio" name="tipo" value="Industria" data-ayuda="ayuda-industria" required><span><b>Indústria</b>Nau, fàbrica, taller, magatzem o oficines</span></label>
           <label class="opcion"><input type="radio" name="tipo" value="Comunidad o fachada" data-ayuda="ayuda-comunidades"><span><b>Comunitat o façana</b>Façana, escala, zones comunes o pis buit</span></label>
           <label class="opcion"><input type="radio" name="tipo" value="Cubierta o terraza" data-ayuda="ayuda-cubiertas"><span><b>Coberta o terrassa</b>Terrassa, terrat o coberta amb filtracions</span></label>
           <label class="opcion"><input type="radio" name="tipo" value="Reforma o acabado fino" data-ayuda="ayuda-acabados"><span><b>Reforma o acabat fi</b>Pis, casa, microciment, estuc o decoració</span></label>
-          erta</span></label>
           <p class="error" id="error-tipo" hidden>Tria el tipus de feina.</p>
         </fieldset>
 

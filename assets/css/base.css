@@ -1076,3 +1076,8 @@ figure.foto img{width:100%;height:auto;background:var(--cal-2)}
 
 /* v3 · «impermeabilización» no cabe a 390 px con el cuerpo de titular de portada */
 @media (max-width:520px){.portada.a-sangre h1{font-size:clamp(2rem,10vw,2.9rem);hyphens:manual;overflow-wrap:break-word}}
+
+/* v5 · 21/10/2026 */
+@media (max-width:560px){.diptico .pares{grid-template-columns:1fr}}
+.par-fotos img{aspect-ratio:auto;object-fit:contain}
+@media (max-width:480px){.portada .acciones .boton,.portada .acciones a{width:100%;justify-content:center;text-align:center}}

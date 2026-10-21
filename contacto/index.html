@@ -192,13 +192,13 @@
            (ver GUIA_ECOMPUTER.md), con los mismos campos, textos y casilla de privacidad.
            Aquí, sin servidor, el envío prepara un correo a info@lamper.es (con JS) o lo manda
            con el programa de correo del navegador (sin JS). -->
-      <form class="formulario" id="form-contacto" action="mailto:info@lamper.es" method="post" enctype="text/plain">
+      <form class="formulario" id="form-contacto" action="./" method="get">
         <fieldset class="entera tipo-trabajo">
-          <legend class="rotulo-campo">¿Qué tipo de trabajo es? <span class="obligatorio">o<label class="opcion"><input type="radio" name="tipo" value="Industria" data-ayuda="ayuda-industria" required><span><b>Industria</b>Nave, fábrica, taller, almacén u oficinas</span></label>
+          <legend class="rotulo-campo">¿Qué tipo de trabajo es? <span class="obligatorio">*</span></legend>
+          <label class="opcion"><input type="radio" name="tipo" value="Industria" data-ayuda="ayuda-industria" required><span><b>Industria</b>Nave, fábrica, taller, almacén u oficinas</span></label>
           <label class="opcion"><input type="radio" name="tipo" value="Comunidad o fachada" data-ayuda="ayuda-comunidades"><span><b>Comunidad o fachada</b>Fachada, escalera, zonas comunes o piso vacío</span></label>
           <label class="opcion"><input type="radio" name="tipo" value="Cubierta o terraza" data-ayuda="ayuda-cubiertas"><span><b>Cubierta o terraza</b>Terraza, azotea o cubierta que filtra</span></label>
           <label class="opcion"><input type="radio" name="tipo" value="Reforma o acabado fino" data-ayuda="ayuda-acabados"><span><b>Reforma o acabado fino</b>Piso, casa, microcemento, estuco o decoración</span></label>
-           o cubierta</span></label>
           <p class="error" id="error-tipo" hidden>Elige el tipo de trabajo.</p>
         </fieldset>
 
