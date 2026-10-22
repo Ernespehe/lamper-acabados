@@ -1090,3 +1090,17 @@ figure.foto img{width:100%;height:auto;background:var(--cal-2)}
   .portada.a-sangre h1,.portada.partida h1,.portada h1{max-width:none}
 }
 .criterios > li > *{grid-column:2} /* v7: el 3.er párrafo (enlaces) caía en la columna del número, 48 px */
+
+/* v7b · 22/10/2026 · móvil: titulares equilibrados, botones iguales, pie legible */
+h1,h2,h3,summary,.criterios h3,figcaption b{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+@media (max-width:520px){
+  h2{font-size:clamp(1.6rem,7.4vw,2.25rem)}
+  h3{overflow-wrap:normal}
+  .acciones,.cta-inicio .acciones{display:flex;flex-direction:column;align-items:stretch;gap:var(--s3)}
+  .acciones .boton,.acciones a.boton,.enviar .boton,.enviar button,form .boton.principal{width:100%;justify-content:center;text-align:center}
+  .pie .columnas{grid-template-columns:1fr}
+  .pie .legal{font-size:.8125rem;line-height:1.55}
+  .pie .legal a{padding:.6em .2em;min-height:44px;display:inline-flex;align-items:center}
+}
+@media (max-width:400px){.municipios{columns:1}}
