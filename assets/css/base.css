@@ -1104,3 +1104,5 @@ p,li,dd{text-wrap:pretty}
   .pie .legal a{padding:.6em .2em;min-height:44px;display:inline-flex;align-items:center}
 }
 @media (max-width:400px){.municipios{columns:1}}
+/* v7c · 22/10/2026 · Ernes: el titular principal entero con la misma letra (sin cursiva ni color en una parte) */
+h1 em,.oscuro h1 em,.portada.a-sangre h1 em{font-style:normal;font-weight:inherit;color:inherit}
